@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>JavaScript DOM Tutorials</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">PocketLibrary</h1>
+          <p>Books for Everyone</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Books to Read</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">A Thousand Splendid Suns</span>
+	    			<span class="delete">Delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Harry Potter and the Goblet of Fire</span>
+	    			<span class="delete">Delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Three Men in a Boat</span>
+	    			<span class="delete">Delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">One Hundred Years of Solitude</span>
+	    			<span class="delete">Delete</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all books</label>
+	    	<input type="text" placeholder="Add a book here..." />
+	    	<button>Add</button>
+	    </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>A simple booklist app with options to search, add, delete and hide books.</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>For more projects, checkout my profile <a href="https://github.com/prasanna1196" target="_blank" >https://github.com/prasanna1196</a></p>
+        </div>
+      </div>
+	</div>
+	<script src="app.js"></script>
+  </body>
+</html>
